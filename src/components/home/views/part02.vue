@@ -1,5 +1,24 @@
 <script setup>
-
+import { ref } from 'vue';
+const centerDialogVisible = ref(false)
+const ruleForm = ref({
+    name: '',
+    phone: '',
+    yanze: '',
+    jz: '',
+    location: ''
+})
+const y = ref(false)
+const options = ref([
+    {
+        value: 'c1',
+        label: 'c1',
+},
+    {
+        value: 'c2',
+        label: 'c2',
+    },
+])
 </script>
 
 <template>
@@ -39,7 +58,7 @@
                             ￥2680
                         </div>
                         <div class="shang03">
-                            <button>学车报名</button>
+                            <button @click="centerDialogVisible = true">学车报名</button>
                         </div>
                     </div>
                     <div class="item-xia">
@@ -80,7 +99,7 @@
                             ￥2680
                         </div>
                         <div class="shang03">
-                            <button>学车报名</button>
+                            <button @click="centerDialogVisible = true">学车报名</button>
                         </div>
                     </div>
                     <div class="item-xia">
@@ -119,7 +138,7 @@
                             ￥2780
                         </div>
                         <div class="shang03">
-                            <button>学车报名</button>
+                            <button @click="centerDialogVisible = true">学车报名</button>
                         </div>
                     </div>
                     <div class="item-xia">
@@ -156,7 +175,7 @@
                             ￥2980
                         </div>
                         <div class="shang03">
-                            <button>学车报名</button>
+                            <button @click="centerDialogVisible = true">学车报名</button>
                         </div>
                     </div>
                     <div class="item-xia">
@@ -168,8 +187,42 @@
         </div>
         <div class="but">
             <a href="https://www.jiakaobaodian.com/wuhan/school/"><el-button plain style="width: 280px;
-            height: 50px;">查看更多</el-button></a>
+            height: 50px; font-size: 16px; color: #999999;">查看更多</el-button></a>
         </div>
+        <el-dialog v-model="centerDialogVisible" width="600px" align-center class="dialog">
+            <p class="p1">免费咨询</p>
+            <p class="p2">留下你的联系方式，不久后会受到来电</p>
+            <el-form ref="ruleFormRef" style="width: 500px; margin: 0 auto;" :model="ruleForm" status-icon
+                :rules="rules" label-width="auto" class="Form">
+                <el-form-item label="姓名" prop="name">
+                    <el-input v-model="ruleForm.name" autocomplete="off" size="large" />
+                </el-form-item>
+                <el-form-item label="手机" prop="phone">
+                    <el-input v-model="ruleForm.phone" autocomplete="off" size="large" />
+                </el-form-item>
+                <el-form-item label="验证" prop="yanze">
+                    <div class="yz">
+                        <el-input v-model="ruleForm.yanze" style="width: 340px;" autocomplete="off" size="large" />
+                        <el-button type="primary" style="width: 120px;" size="large">短信验证码</el-button>
+                    </div>
+                </el-form-item>
+                <el-form-item label="驾照" prop="jz">
+                    <el-select v-model="value" placeholder="c1" size="large">
+                        <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="位置" prop="location">
+                    <el-input v-model="ruleForm.location" autocomplete="off" size="large" />
+                </el-form-item>
+                <div class="submit">
+                    <el-button type="primary" size="large">提交</el-button>
+                </div>
+                <div class="y">
+                    <el-checkbox v-model="y">同意《隐私政策》和《个人信息保护声明》</el-checkbox>
+                </div>
+
+            </el-form>
+        </el-dialog>
     </div>
 </template>
 
@@ -177,6 +230,38 @@
 .home-part02 {
     width: 1260px;
     margin: 0 auto;
+
+    .dialog {
+        padding: 40px;
+        .y{
+            text-align: center;
+        }
+        .submit{
+            width: 100%;
+            text-align: center;
+            button{
+                width: 80%;
+            }
+            
+        }
+        .yz{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .p1 {
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            color: #333333;
+        }
+
+        .p2 {
+            text-align: center;
+            padding: 0 0 20px 20px;
+            font-size: 14px;
+            color: #999999;
+        }
+    }
 
     .part02-img {
         margin-top: 40px;
@@ -197,15 +282,17 @@
     .content-items {
         display: flex;
         flex-wrap: wrap;
-        
+
         .content-item {
             flex: 1;
             border: 1px solid #e9e9e9;
             margin: 0 30px 30px 0;
             padding: 40px 30px;
-            .item-shang{
+
+            .item-shang {
                 display: flex;
             }
+
             .div01 {
                 width: 305px;
 
@@ -242,7 +329,7 @@
             font-size: 30px;
             height: 63px;
             line-height: 63px;
-            padding:0 20px;
+            padding: 0 20px;
             border-left: 1px solid #e9e9e9;
         }
 
@@ -257,27 +344,31 @@
                 border: 1px solid #e9e9e9;
             }
         }
-        .item-xia{
+
+        .item-xia {
             display: flex;
             margin-top: 30px;
             padding: 20px;
             background-color: #FAFAFA;
-            img{
+
+            img {
                 width: 40px;
                 height: 40px;
                 margin-right: 20px;
             }
-            p{
+
+            p {
                 height: 40px;
                 padding-top: 5px;
                 font-size: 14px;
                 color: #999999;
                 overflow: hidden;
-                    text-overflow: ellipsis;
+                text-overflow: ellipsis;
             }
         }
     }
-    .but{
+
+    .but {
         margin-top: 20px;
         text-align: center;
         color: #999999;
