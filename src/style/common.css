@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.01;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "Microsoft YaHei",
+        "Hiragino Sans GB",
+        "Hiragino Sans GB W3",
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
