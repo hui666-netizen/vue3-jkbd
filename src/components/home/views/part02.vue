@@ -190,6 +190,7 @@
     }
 
     .part02-title {
+        margin-bottom: 40px;
         font-size: 30px;
         color: #333333;
         text-align: center;
@@ -251,6 +252,7 @@
 
         .shang03 {
             button {
+                cursor: pointer;
                 width: 80px;
                 line-height: 28px;
                 background: 0 0;
@@ -261,7 +263,6 @@
         }
         .item-xia{
             display: flex;
-            
             margin-top: 30px;
             padding: 20px;
             background-color: #FAFAFA;
