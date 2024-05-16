@@ -55,37 +55,42 @@
         align-items: center;
         justify-content: center;
         list-style: none;
-            .dropbtn {
-                color: white;
-                padding: 16px;
-                font-size: 16px;
-                border: none;
-                cursor: pointer;
-            }
-            .dropdown {
-                position: relative;
-                display: inline-block;
-            }
-            .dropdown-content {
-                text-align: center;
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                width: 100%;
-                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                z-index: 1;
-            }
+        position: relative;
 
-            .dropdown-content a {
-                font-size: 14px;
-                color: rgb(102, 102, 102);
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
+        .dropbtn {
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            text-align: center;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            font-size: 14px;
+            color: rgb(102, 102, 102);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
         .nav-icon {
             transform: rotate(90deg);
@@ -103,7 +108,8 @@
             cursor: pointer;
             color: #ffffff;
             text-decoration: none;
-            &:hover{
+
+            &:hover {
                 background-color: rgb(84, 192, 249);
             }
         }
