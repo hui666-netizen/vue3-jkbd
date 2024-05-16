@@ -56,25 +56,21 @@
                             <div class="div2">
                                 <div class="part"><img src="@/img/dui.png" alt="" class="part-img">
                                     <span class="part-span">
-
                                         口碑好
                                     </span>
                                 </div>
                                 <div class="part"><img src="@/img/dui.png" alt="" class="part-img">
                                     <span class="part-span">
-
                                         规模大
                                     </span>
                                 </div>
                                 <div class="part"><img src="@/img/dui.png" alt="" class="part-img">
                                     <span class="part-span">
-
                                         拿本快
                                     </span>
                                 </div>
                                 <div class="part"><img src="@/img/dui.png" alt="" class="part-img">
                                     <span class="part-span">
-
                                         包接送
                                     </span>
                                 </div>
@@ -88,7 +84,7 @@
                         </div>
                     </div>
                     <div class="item-xia">
-                        <img src="@/img/part02-1.jpg" alt="" class="xia-img">
+                        <img src="@/img/part02-2.jpg" alt="" class="xia-img">
                         <p class="xia-p">
                             必教练很辛苦，作为永安驾校教练，真的很辛苦，在大家放假休闲的时间却是他们最忙碌的时间。他们春夏秋冬室外作业，无论是酷暑还是严寒，他们都要面对恶劣的天气，无论放假和双休日他们都有自己的教学任务。
                         </p>
@@ -127,7 +123,7 @@
                         </div>
                     </div>
                     <div class="item-xia">
-                        <img src="@/img/part02-1.jpg" alt="" class="xia-img">
+                        <img src="@/img/part02-3.jpg" alt="" class="xia-img">
                         <p class="xia-p">首先这个驾校最便宜2500，我交2800，其次科目二要交模拟费，3月7报名到5月13只摸过一次车，报了名想退的，别签电子合同。</p>
                     </div>
                 </div>
@@ -164,7 +160,7 @@
                         </div>
                     </div>
                     <div class="item-xia">
-                        <img src="@/img/part02-1.jpg" alt="" class="xia-img">
+                        <img src="@/img/part02-4.jpg" alt="" class="xia-img">
                         <p class="xia-p">驾校很规范，出地铁口走一会就到了。没有乱七八糟的收费，约课也很方便，每一位教练都很认真负责，学车过程非常愉快。</p>
                     </div>
                 </div>

@@ -25,50 +25,50 @@ const imgSrc = [
             </el-carousel>
         </div>
         <div class="banner-menu-re">
-        <div class="banner-menu">
-            <div class="banner-menu-title">
-                学车流程
-            </div>
-            <div class="banner-menu-items">
-                <div class="banner-menu-item">
-                    <div class="item-icon"><img src="@/img/menu01.png" alt=""></div>
-                    <div class="item-content">
-                        <a href="">
-                            <p class="shang">科目一</p>
-                        </a>
-                        <p class="xia">2024年新题库</p>
-                    </div>
+            <div class="banner-menu">
+                <div class="banner-menu-title">
+                    学车流程
                 </div>
-                <div class="banner-menu-item">
-                    <div class="item-icon"><img src="@/img/menu02.png" alt=""></div>
-                    <div class="item-content">
-                        <a href="">
-                            <p class="shang">科目二</p>
-                        </a>
-                        <p class="xia">精选视频，详讲考点</p>
+                <div class="banner-menu-items">
+                    <div class="banner-menu-item">
+                        <div class="item-icon"><img src="@/img/menu01.png" alt=""></div>
+                        <div class="item-content">
+                            <a href="https://www.jiakaobaodian.com/mnks/kemu1/car-wuhan.html">
+                                <p class="shang">科目一</p>
+                            </a>
+                            <p class="xia">2024年新题库</p>
+                        </div>
                     </div>
-                </div>
-                <div class="banner-menu-item">
-                    <div class="item-icon"><img src="@/img/menu03.png" alt=""></div>
-                    <div class="item-content">
-                        <a href="">
-                            <p class="shang">科目三</p>
-                        </a>
-                        <p class="xia">全方位讲解，攻克难点</p>
+                    <div class="banner-menu-item">
+                        <div class="item-icon"><img src="@/img/menu02.png" alt=""></div>
+                        <div class="item-content">
+                            <a href="https://www.jiakaobaodian.com/mnks/kemu2/car-wuhan.html">
+                                <p class="shang">科目二</p>
+                            </a>
+                            <p class="xia">精选视频，详讲考点</p>
+                        </div>
                     </div>
-                </div>
-                <div class="banner-menu-item">
-                    <div class="item-icon"><img src="@/img/menu04.png" alt=""></div>
-                    <div class="item-content">
-                        <a href="">
-                            <p class="shang">科目四</p>
-                        </a>
-                        <p class="xia">2024年新题库</p>
+                    <div class="banner-menu-item">
+                        <div class="item-icon"><img src="@/img/menu03.png" alt=""></div>
+                        <div class="item-content">
+                            <a href="https://www.jiakaobaodian.com/mnks/kemu3/car-wuhan.html">
+                                <p class="shang">科目三</p>
+                            </a>
+                            <p class="xia">全方位讲解，攻克难点</p>
+                        </div>
+                    </div>
+                    <div class="banner-menu-item">
+                        <div class="item-icon"><img src="@/img/menu04.png" alt=""></div>
+                        <div class="item-content">
+                            <a href="https://www.jiakaobaodian.com/mnks/kemu4/car-wuhan.html">
+                                <p class="shang">科目四</p>
+                            </a>
+                            <p class="xia">2024年新题库</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </template>
 
